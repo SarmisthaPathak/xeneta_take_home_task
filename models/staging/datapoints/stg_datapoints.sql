@@ -1,3 +1,8 @@
+{{ config(
+    materialized="table",
+    post_hook="{{ dq_check_dp() }}"
+) }}
+
 with source as (
 
     {#-
