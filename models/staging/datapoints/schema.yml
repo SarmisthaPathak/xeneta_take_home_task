@@ -2,16 +2,26 @@ version: 2
 
 models:
   - name: stg_datapoints
+    description:
     columns:
       - name: D_ID
+        description:  a unique ID for a datapoint (identifies a shipping contract)
       - name: CREATED
+        description: timestamp when this shipping contract info landed in our system
       - name: ORIGIN_PID
+        description:  identify where the containers to be moved start and end their journey
       - name: DESTINATION_PID
+        description:  identify where the containers to be moved start and end their journey
       - name: VALID_FROM
+        description: Contract validity, `valid_from` and `valid_to` dates between which the cargo will be shipped for this contract's price, usually a month or a year, but can be shorter or longer as well
       - name: VALID_TO
+        description: Contract validity, `valid_from` and `valid_to` dates between which the cargo will be shipped for this contract's price, usually a month or a year, but can be shorter or longer as well
       - name: COMPANY_ID
+        description: Is an integer ID for the company that wants to move cargo as of this contract (the "buyer" of this shipping contract)
       - name: SUPPLIER_ID
+        description: Integer ID for the vessel operator company that provides the shipping service (the "seller" of this contract)
       - name: EQUIPMENT_ID
+        description: An integer between 1 and 6 inclusive, identifies the type of the container (also known as equipment) that is used for transportation. Our users always want to get aggregated price levels for one specific container type of their interest.
 
 
 

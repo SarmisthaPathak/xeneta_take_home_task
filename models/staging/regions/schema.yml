@@ -2,10 +2,16 @@ version: 2
 
 models:
   - name: stg_regions
+    description: A hierarchy of regions that Xeneta has defined, based on ocean container shipping routes and pricing patterns.
+                 You can think about this hierarchy as a few top-level regions (those have Null as their "parent region"), and a tree
+                 of smaller regions under them.
     columns: 
       - name: SLUG 
+        description: A machine-readable form of the region name
       - name: NAME 
+        description: The name of the region
       - name: PARENT 
+        description: Slug describing which parent region the region belongs to in Xeneta's region hierarchy
 
 
 

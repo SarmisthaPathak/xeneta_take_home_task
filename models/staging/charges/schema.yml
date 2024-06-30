@@ -2,13 +2,18 @@ version: 2
 
 models:
   - name: stg_charge
+    description: Each shipping contract (a.k.a. datapoint) has a set of associated _charges_ that we have
+                 to sum up to get a total price for the contract's value. The charges might be in different currencies - for example a "fee for loading the cargo at the origin port" will likely have a different currency than "fee for offloading the containers at the destination port" as the ports are typically in different countries.
     tests:
       - dbt_utils.expression_is_true:
           expression: "LENGTH(CURRENCY) == 3"
     columns:
       - name: D_ID
+        description: D_ID is the identifier of the datapoint/contract that this charge belongs to
       - name: CURRENCY
+        description: Currency is the three-letter currency code to use
       - name: CHARGE_VALUE
+        description: Value is the numerical value of this part of the full price
 
 
 

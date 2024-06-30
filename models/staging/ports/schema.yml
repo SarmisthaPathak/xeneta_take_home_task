@@ -3,6 +3,8 @@ version: 2
 models:
       
   - name: stg_port
+    description: This table contains clickstream events from the marketing website
+
     tests:
       - dbt_utils.expression_is_true:
           expression: "LENGTH(COUNTRY_CODE) == 2"
@@ -10,16 +12,23 @@ models:
           expression: "LENGTH(PORT_CODE) == 5"
     columns: 
       - name: PID
+        description: An integer ID for the port, unique
         tests:
           - unique:
               severity: error
       - name: CODE 
+        description: 5-character port code, also unique
         tests:
           - unique
       - name: SLUG
+        description: Slug identifying which region the port belongs to
       - name: NAME 
+        description: Port name
       - name: COUNTRY 
+        description: Country
       - name: COUNTRY_CODE 
+        description: Two-letter country code
+
 
 
 
