@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_datapoints
+    columns:
+      - name: D_ID
+      - name: CREATED
+      - name: ORIGIN_PID
+      - name: DESTINATION_PID
+      - name: VALID_FROM
+      - name: VALID_TO
+      - name: COMPANY_ID
+      - name: SUPPLIER_ID
+      - name: EQUIPMENT_ID
+
+
+
+
+      
+
+        

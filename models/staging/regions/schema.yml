@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_regions
+    columns: 
+      - name: SLUG 
+      - name: NAME 
+      - name: PARENT 
+
+
+
+      
+
+    

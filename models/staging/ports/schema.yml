@@ -1,0 +1,28 @@
+version: 2
+
+models:
+      
+  - name: stg_port
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "LENGTH(COUNTRY_CODE) == 2"
+      - dbt_utils.expression_is_true:
+          expression: "LENGTH(PORT_CODE) == 5"
+    columns: 
+      - name: PID
+        tests:
+          - unique:
+              severity: error
+      - name: CODE 
+        tests:
+          - unique
+      - name: SLUG
+      - name: NAME 
+      - name: COUNTRY 
+      - name: COUNTRY_CODE 
+
+
+
+      
+
+        

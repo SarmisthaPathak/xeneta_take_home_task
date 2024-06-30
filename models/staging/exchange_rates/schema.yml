@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_exchange_rates
+    columns:
+      - name: DAY
+      - name: CURRENCY
+      - name: RATE
+
+
+
+      
+
+        
