@@ -1,0 +1,9 @@
+xeneta:
+  
+  target: dev
+  outputs: 
+    dev: 
+      type: duckdb 
+      path: test.duckdb 
+      threads: 1
+  
