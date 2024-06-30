@@ -65,6 +65,7 @@ FINAL as (
         S.COMPANY_ID,
         S.SUPPLIER_ID,
         S.EQUIPMENT_ID,
+        S.DAY,
         ROUND(avg(S.TOTAL_USD),4) AVG_PRICE_IN_USD,
         ROUND({{ median('S.TOTAL_USD') }},4) as MEDIAN_PRICE_IN_USD,
         S.DQ_OK
@@ -83,6 +84,7 @@ FINAL as (
         S.COMPANY_ID,
         S.SUPPLIER_ID,
         S.EQUIPMENT_ID,
+        S.DAY,
         S.DQ_OK
 )
 
