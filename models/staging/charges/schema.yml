@@ -1,7 +1,10 @@
 version: 2
 
 models:
-  - name: stg_charges
+  - name: stg_charge
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "LENGTH(CURRENCY) == 3"
     columns:
       - name: D_ID
       - name: CURRENCY

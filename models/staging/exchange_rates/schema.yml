@@ -2,11 +2,13 @@ version: 2
 
 models:
   - name: stg_exchange_rates
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "LENGTH(CURRENCY) == 3"
     columns:
       - name: DAY
       - name: CURRENCY
       - name: RATE
-
 
 
       
