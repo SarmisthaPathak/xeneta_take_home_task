@@ -22,6 +22,8 @@ I am inreamenatlly loading the data in `append` mode based on the dbt [increment
 ### Requirement update
 This requirement also been taken care in the final layer.
 
+### Data Quality checks in staging layer
+DQ check for ports,datapoints,exchange_rate and charges have been added as part of dbt [posthook](https://docs.getdbt.com/reference/resource-configs/pre-hook-post-hook)
 
 ## Running this Project
 
