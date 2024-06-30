@@ -43,7 +43,7 @@ seeds:
     schema: raw
 
 models:
-  xeneta:
+  xeneta_take_home_task:
     staging:
       +enabled: true
       +materialized: table

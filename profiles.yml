@@ -4,6 +4,6 @@ xeneta_take_home_task:
   outputs: 
     dev: 
       type: duckdb 
-      path: test.duckdb 
+      path: test2.duckdb 
       threads: 1
   
