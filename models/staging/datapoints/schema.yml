@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_datapoints
-    description:
+    description: Metadata for an ocean shipping contract between company and supplier
     columns:
       - name: D_ID
         description:  a unique ID for a datapoint (identifies a shipping contract)
