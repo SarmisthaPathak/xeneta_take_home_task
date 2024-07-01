@@ -38,7 +38,7 @@ AP.AVG_PRICE_IN_USD,
 AP.MEDIAN_PRICE_IN_USD, 
 AP.DQ_OK
 
-FROM final.aggregated_price ap 
+FROM {{ref ('aggregated_price')}} ap 
 LEFT JOIN PORT_REGION_DATA PRD ON AP.SRC_PORT_ID = PRD.SRC_PORT_ID 
 AND AP.DEST_PORT_ID = PRD.DEST_PORT_ID ) 
 
