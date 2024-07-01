@@ -17,7 +17,7 @@ It also caters for the creating a view to help end-user requirement.
 For this requirement, I have created a view and sameple queries are placed in `analyze` directory
 
 ### Data update: new contracts
-I am inreamenatlly loading the data in `append` mode based on the dbt [incremental](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/materializations#incremental)
+I am inreamenatally loading the data in `append` mode based on the dbt [incremental](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/materializations#incremental)
 
 ### Requirement update
 This requirement also been taken care in the final layer.
